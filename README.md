@@ -1,4 +1,4 @@
-# feyenoord
+# Feyenoord for jQuery
 
 When you are from Rotterdam, you don't want to use jQuery.ajax()
 
