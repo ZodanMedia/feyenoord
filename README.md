@@ -18,7 +18,10 @@ It simply wraps jQuery ajax calls into a decent $.feyenoord() function. Simple a
 $.feyenoord({
     method: "POST",
     url: "rest/endpoint/",
-    data: { id: "2023", content: "winner" }
+    data: {
+        id: "2023",
+        content: "winner"
+    }
 })
 ```
 
