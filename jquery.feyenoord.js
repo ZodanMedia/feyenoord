@@ -14,16 +14,22 @@
  * });
  * 
  * 
- *
+ * 
  * @author  Marten Moolenaar [zodan.nl]
  * @see     https://speelwei.zodan.nl/feyenoord/
+ * @version 1.0.2
  *
  */
 (function( $ ){
-	$.feyenoord = function ( data ) {
-		return $.ajax( data );
-	}
-	$.feyenoordSetup = function ( data ) {
-		return $.ajaxSetup( data );
+	// check if feyenoord is already playing
+	// or, in perfect Rotterdutch:
+	// "ff kijke wavvorvlees we in De Kuip hebbe"
+	if (typeof $.feyenoord != 'function') {
+		$.feyenoord = function ( data ) {
+			return $.ajax( data );
+		}
+		$.feyenoordSetup = function ( data ) {
+			return $.ajaxSetup( data );
+		}
 	}
 })( jQuery );
